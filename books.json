@@ -1,0 +1,32 @@
+[
+  {
+    "id": 632463241,
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J. K. Rowling",
+    "price": 299
+  },
+  {
+    "id": 621421512,
+    "title": "Sword of Destiny",
+    "author": "Andrzej Sapkowski",
+    "price": 359
+  },
+  {
+    "id": 212521352,
+    "title": "The Two Towers",
+    "author": "J. R. R. Tolkien",
+    "price": 399
+  },
+  {
+    "id": 734532563,
+    "title": "Dune Messiah",
+    "author": "Frank Herbert",
+    "price": 459
+  },
+  {
+    "id": 41252134,
+    "title": "A Storm of Swords",
+    "author": "George R. R. Martin",
+    "price": 599
+  }
+]
