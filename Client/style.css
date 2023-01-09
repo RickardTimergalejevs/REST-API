@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    background-color: gray;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h1, p {
+    text-align: center;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+.booksContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 50vh;
+}
+
+.createContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleContainer, .authorContainer, .priceContainer {
+    width: 300px;
+}
+
+input {
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+}
+
+.createBtn {
+    margin-top: 20px;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    gap: 10px;
+    padding: 10px;
+}

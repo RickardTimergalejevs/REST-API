@@ -3,7 +3,7 @@
     "id": 632463241,
     "title": "Harry Potter and the Philosopher's Stone",
     "author": "J. K. Rowling",
-    "price": 299
+    "price": "500"
   },
   {
     "id": 621421512,
@@ -21,12 +21,12 @@
     "id": 734532563,
     "title": "Dune Messiah",
     "author": "Frank Herbert",
-    "price": 459
+    "price": 559
   },
   {
     "id": 41252134,
     "title": "A Storm of Swords",
     "author": "George R. R. Martin",
-    "price": 599
+    "price": "800"
   }
 ]

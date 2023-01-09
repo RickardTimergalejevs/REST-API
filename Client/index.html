@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST-API</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Välj en bok</h1>
+    <p>(Klicka på bokens titel)</p>
+    <div class="booksContainer"></div>
+
+    <div class="createContainer">
+        <h3>Lägg till bok</h3>
+        <label for="title">Titel</label>
+        <input class="titleContainer" type="text">
+
+        <label for="author">Författare</label>
+        <input class="authorContainer" type="text">
+
+        <label for="price">Pris</label>
+        <input class="priceContainer" type="number">
+
+        <button class="createBtn" type="submit" onclick="createBook()">Lägg till</button>
+    </div>
+</body>
+</html>

@@ -7,6 +7,7 @@ const cors = require("cors")
 app.use(express.json())
 app.use(cors())
 
+
 /* Hämta books data (GET) */
 app.get("/api/books", (req, res) => {
     fs.readFile("./books.json", (err, data) => {
@@ -20,10 +21,10 @@ app.get("/api/books", (req, res) => {
 })
 
 /* Hämta specifik book med title (GET) */
-app.get("/api/books/:title", (req, res) => {
+app.get("/api/books/:id", (req, res) => {
     fs.readFile("./books.json", (err, data) => {
         const books = JSON.parse(data)
-        const book = books.find((books) => books.title == req.params.title)
+        const book = books.find((books) => books.id == req.params.id)
 
         if(!book) {
             res.status(404).send("Book not found")
@@ -42,10 +43,10 @@ app.post("/api/books", (req, res) => {
 
         const books = JSON.parse(data)
         const newBook = {
-            id: 41252134,
-            title: "A Storm of Swords",
-            author: "George R. R. Martin",
-            price: 599
+            id: req.body.id,
+            title: req.body.title,
+            author: req.body.author,
+            price: req.body.price
         }
         books.push(newBook)
 
@@ -70,8 +71,6 @@ app.put("/api/books/:id", (req, res) => {
         } else {
             books.find((book) => {
                 if(book.id == req.params.id) {
-                    book.title = req.body.title,
-                    book.author = req.body.author,
                     book.price = req.body.price
                 }
             })

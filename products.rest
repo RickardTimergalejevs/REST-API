@@ -2,12 +2,19 @@ GET http://localhost:3000/api/books
 
 ###
 
-GET http://localhost:3000/api/books/Dune Messiah
+GET http://localhost:3000/api/books/632463241
 
 ###
 
 POST http://localhost:3000/api/books
+Content-Type: application/json
 
+{
+"id": 41252134, 
+"title" : "A Storm of Swords", 
+"author": "George R. R. Martin", 
+"price": 499
+}
 ###
 
 PUT http://localhost:3000/api/books/734532563
@@ -16,7 +23,7 @@ Content-Type: application/json
 {
     "title": "Dune Messiah",
     "author": "Frank Herbert",
-    "price": 459
+    "price": 559
 }
 
 ###
